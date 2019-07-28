@@ -1,4 +1,4 @@
-# Program 1
+   #Program 1
 
 year=2004
 if year%4==0 and year%100!=0:
@@ -7,7 +7,7 @@ else:
     print(year,"is not leap year")
     
     
-   # Program 2
+    #Program 2
  
  angleSet = (50,40,90)
 Sum = 0
