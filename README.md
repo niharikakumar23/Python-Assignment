@@ -116,7 +116,58 @@ if AMT >= 10:
 
 print("2000=",Y["2000"],",500=",Y["500"],",100=",Y["100"],",20=",Y["20"],",10=",Y["10"])
 
+#Program 6
 
+for Value in range(1,51):
+	if Value % 7 != 0 and ((Value - 7) % 10) != 0:
+		print(Value)
+		
+#Program 7
+
+squaresum = 0
+for value in range(10,20):
+	square = value ** 2
+	squaresum += square
+print("square is",squaresum)
+
+
+#Program 8
+
+Number = 50
+while Number > 1:
+	if Number % 2 == 0:
+		Number = Number // 2
+		print(Number)
+	else:
+		Number = (Number * 3) + 1
+		print(Number)
+		
+#Program 9
+
+A = 10
+B = 100
+x = 0
+if A > B:
+	x = A
+else:
+	x = B
+
+while (A * B) >= x:
+	if (x % A == 0) and (x % B == 0):
+		break
+	x += 1
+print(x)
+
+		
+#Program 10 :
+
+x = 123456789
+ReverseNum = 0
+while x > 0: 
+    ReverseNum = (ReverseNum * 10) + (x % 10)
+    x = x//10
+
+print(ReverseNum)
 
 
 
