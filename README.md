@@ -28,7 +28,7 @@ else:
 	
 	
 #Program 3
-
+ 
 Unit = 400
 Total = 0
 if Unit > 250:
@@ -72,4 +72,54 @@ else:
 	elif b == 5:
 		tip = a * 0.25
 	print("Tip of Rs.",a,"is Rs.",tip)
+	
+
+#Program 5
+
+AMT = 100250
+Y = {"2000":0,"500":0,"100":0,"50":0,"20":0,"10":0}
+
+div = AMT // 2000
+if div >= 1:
+	Y["2000"]=div
+	AMT -= (2000 * div)
+
+if AMT >= 500:
+	div = AMT // 500
+	if div >= 1:
+		Y["500"]=div
+		AMT -= (500 * div)
+
+if AMT >= 100:
+	div = AMT // 100
+	if div >= 1:
+		Y["100"]=div
+		AMT -= (100 * div)
+
+if AMT >= 50:
+	div = AMT // 50
+	if div >= 1:
+		Y["50"]=div
+		AMT -= (50 * div)
+
+if AMT >= 20:
+	div = AMT // 20
+	if div >= 1:
+		Y["20"]=div
+		AMT -= (20 * div)
+
+if AMT >= 10:
+	div = AMT // 10
+	if div >= 1:
+		Y["10"]=div
+		AMT -= (10 * div)
+
+print("2000=",Y["2000"],",500=",Y["500"],",100=",Y["100"],",20=",Y["20"],",10=",Y["10"])
+
+
+
+
+
+
+	
 
